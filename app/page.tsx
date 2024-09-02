@@ -2,13 +2,23 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="relative min-h-screen p-24">
+      <div className="absolute top-0 left-0 p-6">
+        <Image 
+          src="/DevJourney-logo.png"
+          alt="DevJourney Logo" 
+          width={160}
+          height={160}
+          className="width-150 height-150 overflow-hidden rounded-full"
+        />
+      </div>
+
       <div className="flex flex-col items-center justify-center">
         <h2 className="text-center text-lg font-semibold">
           ✋ Hi there!
         </h2>
-        <h1 className="text-4xl text-center p-8 font-bold">
-          Welcome to Sixtus Aondoakaa's Blog app.
+        <h1 className="text-5xl text-center p-8 font-bold">
+          Welcome to Sixtus's Blog app.
         </h1>
 
         <p className="text-center text-lg max-w-2xl leading-relaxed">
